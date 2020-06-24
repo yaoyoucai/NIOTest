@@ -1,4 +1,4 @@
-package yao.nio.buffer;
+package yao.nio.channel;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

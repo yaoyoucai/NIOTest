@@ -21,19 +21,22 @@ public class TestBuffer {
         System.out.println("limit:"+byteBuffer.limit());
         System.out.println("capacity:"+byteBuffer.capacity());
 
-        System.out.println("------------------------");
+        System.out.println("------------------------flip");
         /**
          * 需要将buffer从写数据状态变为读数据状态
          */
         byteBuffer.flip();
-        byte[] bytes = new byte[value.length()];
-        byteBuffer.get(bytes);
-        System.out.println("result:"+new String(bytes));
         System.out.println("position:"+byteBuffer.position());
         System.out.println("limit:"+byteBuffer.limit());
         System.out.println("capacity:"+byteBuffer.capacity());
-
-        byteBuffer.rewind();
+//        byte[] bytes = new byte[value.length()];
+//        byteBuffer.get(bytes);
+//        System.out.println("result:"+new String(bytes));
+//        System.out.println("position:"+byteBuffer.position());
+//        System.out.println("limit:"+byteBuffer.limit());
+//        System.out.println("capacity:"+byteBuffer.capacity());
+//
+//        byteBuffer.rewind();
 
     }
 
